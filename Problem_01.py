@@ -4,11 +4,8 @@ def calculate_fine(book_title, days_overdue, daily_rate=5.00, max_fine=150.0):
         fine = max_fine
     return fine
 
-line = input()
-
-parts = line.rsplit(" ", 1)
-book_title = parts[0]
-days_overdue = int(parts[1])
+book_title = input()
+days_overdue = int(input())
 
 fine = calculate_fine(book_title, days_overdue)
 
