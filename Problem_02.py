@@ -5,13 +5,9 @@ def calculate_fine(book_title, days_overdue, daily_rate, max_fine=150.0):
     return fine
 
 
-line = input()
-parts = line.split()
-
-days_overdue = int(parts[-2])
-daily_rate = int(parts[-1])
-
-book_title = " ".join(parts[:-2])
+book_title = input()
+days_overdue = int(input())
+daily_rate = int(input())
 
 fine = calculate_fine(book_title, days_overdue, daily_rate)
 
