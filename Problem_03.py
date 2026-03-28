@@ -1,16 +1,17 @@
-def calculatefine(booktitle, daysoverdue, dailyrate=5.0, maxfine=150.0):
-    fine = daysoverdue * dailyrate
-    if fine > maxfine:
-        fine = maxfine
+def calculate_fine(book_title, days_overdue, daily_rate=5.0, max_fine=150.0):
+    fine = days_overdue * daily_rate
+    if fine > max_fine:
+        fine = max_fine
     return fine
 
-booktitle = input()
-daysoverdue = int(input())
 
-fine = calculatefine(booktitle, daysoverdue)
+book_title = input()
+days_overdue = int(input())
 
-print("Book:", booktitle)
-print("Days overdue:", daysoverdue)
+fine = calculate_fine(book_title, days_overdue)
+
+print("Book:", book_title)
+print("Days overdue:", days_overdue)
 print("Fine: Rs.", float(fine))
 
 if fine == 150.0:
