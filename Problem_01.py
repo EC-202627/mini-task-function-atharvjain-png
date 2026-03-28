@@ -9,4 +9,6 @@ days_overdue = int(input())
 
 fine = calculate_fine(book_title, days_overdue)
 
-print("Book:", book_title, "Days overdue:", days_overdue, "Fine: Rs.", float(fine))
+print("Book:", book_title)
+print("Days overdue:", days_overdue)
+print("Fine: Rs.", float(fine))
