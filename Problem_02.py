@@ -11,4 +11,6 @@ daily_rate = int(input())
 
 fine = calculate_fine(book_title, days_overdue, daily_rate)
 
-print("Book:", book_title, "Days overdue:", days_overdue, "Fine: Rs.", float(fine))
+print("Book:", book_title)
+print("Days overdue:", days_overdue)
+print("Fine: Rs.", float(fine))
